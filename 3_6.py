@@ -11,11 +11,9 @@ import requests
 a = ''
 with open ('dataset_3378_3.txt', 'r') as fl:
     url= fl.readline().strip()
-    print(url)
 while a!= 'We':
-    a=''
     r = requests.get(url)
-    a = a + r.text[:2]
+    a = r.text[:2]
     url = 'https://stepic.org/media/attachments/course67/3.6.3/' + r.text.strip()
     res = r.text
 print(res)
