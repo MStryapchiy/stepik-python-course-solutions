@@ -26,21 +26,21 @@
 #     print(key, value)
 
 
-# def f(x):
-#     a = x*2
-#     return a
-# a = int(input())
-# n = 0
-# ls = []
-# d = {}
-# while n < a:
-#     c = int(input())
-#     ls.append(c)
-#     n += 1
-# n = 0
-# for i in ls:
-#     d[i]= 0
-# for key in d:
-#     d[key] = f(key)
-# for i in ls:
-#     print(d[i])
+def f(x):
+    a = x*2
+    return a
+a = int(input())
+n = 0
+ls = []
+d = {}
+while n < a:
+    c = int(input())
+    ls.append(c)
+    n += 1
+n = 0
+for i in ls:
+    d[i]= 0
+for key in d:
+    d[key] = f(key)
+for i in ls:
+    print(d[i])
